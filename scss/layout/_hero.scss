@@ -1,0 +1,78 @@
+.hero {
+    &__left {
+        padding: 40px 0;
+        margin-left: 90px;
+    }
+
+    &__inner {
+        white-space: nowrap;
+        position: relative;
+    }
+
+    &__desc {
+        color: var(--hero-text-color);
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &__heading {
+        color: var(--hero-text-color);
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        margin: 20px 0;
+    }
+
+    &__sale {
+        color: var(--hero-text-color);
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1;
+        // margin-bottom: 73px;
+    }
+
+    .hero__intro {
+        color: var(--hero-text-color);
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    &__media {
+        margin-right: 125px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+        .hero__img {
+            width: 300px;
+            object-fit: contain;
+            height: 300px;
+        }
+    }
+
+    .hero__control {
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        background-color: var(--text-color-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+}
+
+.hero__list {
+    width: 100%;
+    display: flex;
+    margin-top: 36px;
+}
+
+.hero__item {
+    display: flex;
+    border-radius: 16px;
+    justify-content: space-between;
+    background: var(--hero-bg-color);
+    flex-wrap: nowrap;
+    width: 100%;
+}

@@ -1,0 +1,108 @@
+%flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__fixed {
+    @extend %flexCenter;
+    position: sticky;
+    padding: 20px 0;
+    top: -1px;
+    z-index: 10;
+    background: var(--background);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.top-bar {
+    @extend %flexCenter;
+    .logo__title {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        color: var(--text-color-dark);
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 0.75;
+        margin-left: 13px;
+    }
+}
+
+.search {
+    @extend %flexCenter;
+    padding: 15px 16px;
+    background: var(--text-color-light);
+    border-radius: 10px;
+    .search__input {
+        @extend %flexCenter;
+        width: 507px;
+        border: none;
+        outline: none;
+        background: var(--search-background);
+        margin-left: 10px;
+        margin-bottom: -2px;
+    }
+}
+
+.action__list {
+    @extend %flexCenter;
+    .action__item {
+        @extend %flexCenter;
+    }
+    .action__icon {
+        display: inline-block;
+    }
+    .action__desc {
+        display: inline-block;
+        margin-left: 6px;
+        color: var(--text-color-grey);
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.12;
+        white-space: nowrap;
+    }
+    .action__line {
+        margin: 0 20px;
+        width: 1px;
+        height: 24px;
+        background: var(--border-color);
+    }
+}
+
+.navbar {
+    margin-top: 25px;
+    &__list {
+        @extend %flexCenter;
+        gap: 14px;
+    }
+    &__item {
+        @extend %flexCenter;
+        width: auto;
+        padding: 14px 14px;
+        border-radius: 18px;
+        column-gap: 10px;
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            font-weight: 700;
+            color: var(--text-color-grey);
+        }
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        filter: var(--icon-filter);
+    }
+    &__title {
+        white-space: nowrap;
+        display: flex;
+        color: var(--text-color-dark);
+        font-size: 2rem;
+        font-weight: 550;
+    }
+}
